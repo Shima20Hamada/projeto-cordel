@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root {
+    --corcantos: #0B0A07;
+    --corletracantos: #EDCBB1;
+    --corletraclara: #18c1c4;
+    --corletraescura: #657153;
+    --corfc: white;
+    --corfe: #5b2f32;
+    --cor1cfe: #0000004d;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#backtop {
+    text-decoration: none;
+    background-color: rgb(152, 152, 152);
+    color: white;
+    padding: 10px 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.481);
+    text-shadow:inset 2px 2px 4px rgba(0, 0, 0, 0.481);
+}
+
+header {
+    background-color: var(--corcantos);
+    color: var(--corletracantos);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--corletracantos);
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--corcantos);
+    color: var(--corletracantos);
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+.normal {
+    color: var(--corletraescura);
+}
+
+section.imagen {
+    background-color: var(--corfe);
+    color: var(--corletraclara);
+}
+
+section.imagen > p {
+    background-color: var(--cor1cfe);
+    width: 400px;
+}
